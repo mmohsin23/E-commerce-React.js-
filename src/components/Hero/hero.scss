@@ -1,0 +1,31 @@
+.HeroComponent{
+    height: 80vh;
+    .heroSlider{
+        height: 80vh;
+        position: relative;
+        .swiper-slide{
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .swiper-button-next,
+        .swiper-button-prev{
+            color: #f1c40f;
+        }
+        .swiper-pagination{
+            .swiper-pagination-bullet{
+                width: 10px;
+                height: 10px;
+                background-color: white;
+                transition: all 0.4s ease;
+                &-active{
+                    transition: all 0.4s ease;
+                    background-color: #f1c40f;
+                    width: 18px;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
