@@ -3,8 +3,6 @@ import logo from "../Assets/main-logo.png";
 import "./navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -24,7 +22,7 @@ const Navbar = () => {
           </Link>
         </div>
         <ul className="nav-menu">
-          <li
+          <li 
             className="nav-item"
             onClick={() => {
               setMenu("home");
