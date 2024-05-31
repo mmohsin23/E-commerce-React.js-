@@ -64,12 +64,12 @@
         border: 1px solid rgb(195, 195, 195);
         .imgHover{
             img{
-             transform: scale(1.05);
+             transform: scale(1.03);
              transition: all 0.3s ease;
             }
             button{
                 bottom: 0;
-                transition: all 500ms ease;
+                transition: all 0.3s ease;
             }
         }
         .productInfo{

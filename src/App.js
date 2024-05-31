@@ -1,6 +1,7 @@
 import './App.scss';
 import Navbar from './components/navbar/navbar';
 import ShopPage from './pages/shopPage';
+import Footer from './pages/footer';
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -22,6 +23,7 @@ function App() {
           <Route path="/cart" element={<cart/>} />
 
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
