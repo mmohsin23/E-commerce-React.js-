@@ -1,11 +1,6 @@
 import React from 'react'
-import "../../Assets/Scss/hero.scss";
 import { Swiper, SwiperSlide} from 'swiper/react';
 import { Navigation, Pagination,  A11y, Autoplay,EffectFade  } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import 'swiper/css/effect-fade';
 
 
 const Hero = () => {
@@ -16,7 +11,7 @@ const Hero = () => {
           spaceBetween={20}
           loop={true}
           autoplay={{ delay: 2000, disableOnInteraction: false}}
-          slidesPerView={1}
+          slidesPerView={2}
           effect='fade'
           navigation={{ clickable: true }}
           pagination={{ clickable: true }}
@@ -24,16 +19,16 @@ const Hero = () => {
           onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide> <img src="/Assets/Images/recip-soup.png" alt="" />
-            <button>View Details</button>
+            <button className='detailButton'>View Details</button>
           </SwiperSlide>
           <SwiperSlide> <img src="/Assets/Images/recip-tray.png" alt="" />
-            <button>View Details</button>
+            <button className='detailButton'>View Details</button>
           </SwiperSlide>
           <SwiperSlide> <img src="/Assets/Images/recip-soup.png" alt="" />
-            <button>View Details</button>
+            <button className='detailButton'>View Details</button>
           </SwiperSlide>
           <SwiperSlide> <img src="/Assets/Images/recip-tray.png" alt="" />
-            <button>View Details</button>
+            <button className='detailButton'>View Details</button>
           </SwiperSlide>
         </Swiper>
     </div>

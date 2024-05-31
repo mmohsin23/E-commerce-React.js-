@@ -1,0 +1,119 @@
+.HeroComponent {
+    height: calc(100vh - 80px);
+
+    .heroSlider {
+        height: calc(100vh - 80px);
+        position: relative;
+
+        .swiper-slide {
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .detailButton {
+                position: absolute;
+                left: 60%;
+                bottom: 6%;
+                transform: translateX(-50%);
+                background-color: #c69938;
+                color: white;
+                border: none;
+                padding: 10px 70px;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: all 0.4s ease;
+                opacity: 0;
+
+                &:hover {
+                    background-color: white;
+                    color: #c69938;
+                }
+            }
+
+            &-visible {
+                button {
+                    opacity: 1;
+                    left: 50%;
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #f1c40f;
+        }
+
+        .swiper-pagination {
+            .swiper-pagination-bullet {
+                width: 10px;
+                height: 10px;
+                background-color: white;
+                opacity: 0.6;
+                transition: all 0.4s ease;
+
+                &-active {
+                    opacity: 1;
+                    transition: all 0.4s ease;
+                    background-color: #f1c40f;
+                    width: 18px;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
+
+.Product-Slider {
+    
+    .Product-Swiper {
+        position: relative;
+        padding-bottom: 60px;
+        padding-top: 20px;
+        padding-inline: 60px;
+        .prev-btn,.next-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #c69938;
+            border: none;
+            padding: 8px 10px;
+            border-radius: 8px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            opacity: 1;
+            z-index: 10;
+            &:hover {
+                transition: all 0.2s ease;
+                background-color: #c69938;
+                color: white;
+            }
+        } 
+        .prev-btn {
+            left: 10px;
+        }
+        .next-btn {
+            right: 10px;
+        }
+        .swiper-pagination {
+            .swiper-pagination-bullet {
+                width: 10px;
+                height: 10px;
+                background-color: #c69938a0;
+                opacity: 0.6;
+                transition: all 0.4s ease;
+
+                &-active {
+                    opacity: 1;
+                    transition: all 0.4s ease;
+                    background-color: #f1c40f;
+                    width: 18px;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}

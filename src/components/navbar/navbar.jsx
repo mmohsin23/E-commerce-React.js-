@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../../Assets/Scss/navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";

@@ -1,13 +1,12 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../Assets/Scss/product.scss";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
-const products = () => {
+const products = ({productName, lastPrice, newPrice, imgSrc}) => {
   return (
     <div className='ProductCard mt-3'>
       <div className="imgHover">
-        <img src="/Assets/Images/media-01.png" alt="" />
+        <img src={imgSrc} alt="" />
         <button>View Details</button>
       </div>
       <div className="productInfo">
@@ -16,12 +15,14 @@ const products = () => {
         <FontAwesomeIcon icon={faStar} />
         <FontAwesomeIcon icon={farStar} />
         <FontAwesomeIcon icon={farStar} />
-        <h2>Product Name</h2>
+        <h2>{productName}</h2>
         <h3 className='original'>
-          <span>
-              Rs 6,500.00
-          </span>
-          Rs 4,500.00
+          {lastPrice && (
+            <span>
+              Rs {lastPrice}
+            </span>
+          )}
+          Rs {newPrice}
         </h3>
       </div>
 
