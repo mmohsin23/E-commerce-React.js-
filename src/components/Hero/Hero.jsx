@@ -1,5 +1,5 @@
 import React from 'react'
-import './hero.scss'
+import "../../Assets/Scss/hero.scss";
 import { Swiper, SwiperSlide} from 'swiper/react';
 import { Navigation, Pagination,  A11y, Autoplay,EffectFade  } from 'swiper/modules';
 import 'swiper/css';
@@ -7,8 +7,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 
-import SliderImg1 from '../Assets/recip-soup.png'
-import SliderImg2 from '../Assets/recip-tray.png'
 
 const Hero = () => {
   return (
@@ -25,10 +23,18 @@ const Hero = () => {
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          <SwiperSlide> <img src={SliderImg1} alt="" /></SwiperSlide>
-          <SwiperSlide> <img src={SliderImg2} alt="" /></SwiperSlide>
-          <SwiperSlide> <img src={SliderImg1} alt="" /></SwiperSlide>
-          <SwiperSlide> <img src={SliderImg2} alt="" /></SwiperSlide>
+          <SwiperSlide> <img src="/Assets/Images/recip-soup.png" alt="" />
+            <button>View Details</button>
+          </SwiperSlide>
+          <SwiperSlide> <img src="/Assets/Images/recip-tray.png" alt="" />
+            <button>View Details</button>
+          </SwiperSlide>
+          <SwiperSlide> <img src="/Assets/Images/recip-soup.png" alt="" />
+            <button>View Details</button>
+          </SwiperSlide>
+          <SwiperSlide> <img src="/Assets/Images/recip-tray.png" alt="" />
+            <button>View Details</button>
+          </SwiperSlide>
         </Swiper>
     </div>
   )
