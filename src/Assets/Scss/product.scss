@@ -4,7 +4,7 @@
     padding: 12px;
     border-radius: 8px;
     transition: all 0.3s ease;
-    border: 1px solid rgb(195, 195, 195);
+    border: none;
     .imgHover{
         border-radius: 8px;
         overflow: hidden;
@@ -13,12 +13,13 @@
             object-fit: cover;
              transition: all 0.3s ease;
              width: 100%;
+             aspect-ratio: 1/1.4;
         }
         button{
             position: absolute;
             bottom: -100%;
             left: 50%;
-            width: 90%;
+            width: 80%;
             transform: translate(-50%, -50%);
             background-color: #c69938;
             color: white;
@@ -26,11 +27,11 @@
             padding: 10px 20px;
             border-radius: 8px;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 500ms ease;
             &:hover{
                 background-color: white;
                 color: #c69938;
-                transition: all 0.3s ease;
+                transition: all 500ms ease;
             }
         
         }
@@ -59,15 +60,16 @@
     &:hover{
         box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
         transition: all 0.3s ease;
-        transform: scale(1.02);
-        border: transparent;
+        transform: scale(1.01);
+        border: 1px solid rgb(195, 195, 195);
         .imgHover{
             img{
-             transform: scale(1.1);
+             transform: scale(1.05);
              transition: all 0.3s ease;
             }
             button{
                 bottom: 0;
+                transition: all 500ms ease;
             }
         }
         .productInfo{

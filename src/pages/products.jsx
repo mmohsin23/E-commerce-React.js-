@@ -1,13 +1,13 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import './product.scss'
+import "../Assets/Scss/product.scss";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
 const products = () => {
   return (
     <div className='ProductCard mt-3'>
       <div className="imgHover">
-        <img src="/Assets/media-01.png" alt="" />
+        <img src="/Assets/Images/media-01.png" alt="" />
         <button>View Details</button>
       </div>
       <div className="productInfo">

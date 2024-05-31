@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import logo from "../Assets/main-logo.png";
-import "./navbar.scss";
+import "../../Assets/Scss/navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
@@ -13,7 +12,7 @@ const Navbar = () => {
         <div className="nav-logo">
           <Link to="/">
             <img
-              src={logo}
+              src="/Assets/Images/main-logo.png"
               alt=""
               onClick={() => {
                 setMenu("home");
