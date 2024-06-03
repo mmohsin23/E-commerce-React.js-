@@ -1,0 +1,29 @@
+.ClientReviews {
+    height: 100%;
+    .reviewCard {
+        border-radius: 4px;
+        height: 100%;
+        background-color: white;
+        padding: 30px 60px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        .rating {
+            text-align: center;
+            svg {
+                color: #f1c40f;
+                font-size: 20px;
+            }
+        }
+        .review {
+            font-size: 20px;
+            text-align: center;
+            line-height: 1.2;
+            margin-block: 25px;
+        }
+        .userName {
+            font-size: 18px;
+            text-align: center;
+            font-weight: 600;
+            margin: 0px;
+        }
+    }
+}

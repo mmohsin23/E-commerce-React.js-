@@ -23,13 +23,13 @@
             padding: 8px 0;
             color: white;
             font-size: 18px;
-            transition: all 0.4s ease;
+            transition: all 0.4s ease-in-out;
             &:hover{
                 background-color: white;
                 font-weight: 800;
                 color: #c69938;
-                transition: all 0.4s ease;
-                padding-inline-start: 10px;
+                transition: all 0.4s ease-in-out;
+                padding-inline-start: 15px;
             }
         }
     }
@@ -45,6 +45,33 @@
         color: white;
         font-weight: 400; 
     }  
+    .footer-input{
+        input{
+            border: none;
+            outline: none;
+            color: #c69938;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            height: 50px;
+            padding-left: 25px;
+        }
+        button{
+            background-color: #c69938;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            height: 50px;
+            margin-left: -30px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            &:hover{
+                background-color: white;
+                color: #c69938;
+                transition: all 0.4s ease;
+            }
+        }
+    }
     .footer-copyright{
         margin-top: 30px;
         background-color: #c69938;

@@ -18,16 +18,16 @@ const Hero = () => {
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          <SwiperSlide> <img src="/Assets/Images/recip-soup.png" alt="" />
+          <SwiperSlide> <img src="/Images/recip-soup.png" alt="" />
             <button className='detailButton'>View Details</button>
           </SwiperSlide>
-          <SwiperSlide> <img src="/Assets/Images/recip-tray.png" alt="" />
+          <SwiperSlide> <img src="/Images/recip-tray.png" alt="" />
             <button className='detailButton'>View Details</button>
           </SwiperSlide>
-          <SwiperSlide> <img src="/Assets/Images/recip-soup.png" alt="" />
+          <SwiperSlide> <img src="/Images/recip-soup.png" alt="" />
             <button className='detailButton'>View Details</button>
           </SwiperSlide>
-          <SwiperSlide> <img src="/Assets/Images/recip-tray.png" alt="" />
+          <SwiperSlide> <img src="/Images/recip-tray.png" alt="" />
             <button className='detailButton'>View Details</button>
           </SwiperSlide>
         </Swiper>

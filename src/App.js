@@ -21,7 +21,6 @@ function App() {
             <Route path=':productId' element={<product/>} />
           </Route>
           <Route path="/cart" element={<cart/>} />
-
         </Routes>
         <Footer />
       </BrowserRouter>

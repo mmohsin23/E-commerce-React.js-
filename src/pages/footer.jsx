@@ -7,7 +7,7 @@ const footer = () => {
             <div className="row">
                 <div className="col-lg-4">
                     <div className="footer-logo">
-                        <img src="/Assets/Images/main-logo.png" alt="" />
+                        <img src="/Images/main-logo.png" alt="" />
                     </div>
                 </div>
                 <div className="col-lg-4">
@@ -43,7 +43,7 @@ const footer = () => {
                         Don't miss out our Future Updates! Get Subscribed Today!
                     </p>
                     <div className="footer-input">
-                        <input type="text" placeholder="Enter Your Email" />
+                        <input type="email" placeholder="Enter Your Email" />
                         <button>Subscribe</button>
                     </div>
                 </div>
