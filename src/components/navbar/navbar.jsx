@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="nav-logo">
           <Link to="/">
             <img
-              src="/Assets/Images/main-logo.png"
+              src="/Images/main-logo.png"
               alt=""
               onClick={() => {
                 setMenu("home");

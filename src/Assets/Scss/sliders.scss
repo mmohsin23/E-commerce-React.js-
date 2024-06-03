@@ -33,7 +33,7 @@
             }
 
             &-visible {
-                button {
+                .detailButton {
                     opacity: 1;
                     left: 50%;
                     transition: all 0.5s ease;
@@ -67,13 +67,20 @@
 }
 
 .Product-Slider {
-    
     .Product-Swiper {
         position: relative;
-        padding-bottom: 60px;
         padding-top: 20px;
         padding-inline: 60px;
-        .prev-btn,.next-btn {
+        .swiper{
+            padding-bottom: 60px;
+            padding-top: 20px;
+            .swiper-slide{
+                height: auto;
+                
+            }
+        }
+        .prev-btn,.next-btn ,
+        .prev-btn1,.next-btn1 {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -92,10 +99,12 @@
                 color: white;
             }
         } 
-        .prev-btn {
+        .prev-btn,
+        .prev-btn1 {
             left: 10px;
         }
-        .next-btn {
+        .next-btn ,
+        .next-btn1{
             right: 10px;
         }
         .swiper-pagination {

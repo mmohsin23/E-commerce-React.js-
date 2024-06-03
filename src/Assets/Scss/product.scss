@@ -37,9 +37,19 @@
         }
     }
     .productInfo{
+        label{
+            input[type="radio" i] {
+                display: none;
+            }
+            .Star{
+                cursor: pointer;
+            }
+        }
         svg{
-            color:#c69938;
-            padding-block: 16px;
+            // color: #f1c40f;
+            padding-top: 16px;
+            padding-inline-end: 5px;
+            font-size: 20px;
         }
         h2{
             font-size: 24px;
@@ -49,6 +59,7 @@
         }
         h3{
             font-size: 18px;
+            font-weight: 400;
             color: rgb(132, 132, 132);
             span{
                 color: red;

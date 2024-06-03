@@ -4,70 +4,41 @@ import { Swiper, SwiperSlide} from 'swiper/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { Navigation, Pagination,  A11y, Autoplay,EffectFade  } from 'swiper/modules';
+import data_products from '../Assets/data/data1.js';
 
 const productSlider = () => {
-  return (
+return (
     <div className='Product-Slider'>
-        <div className="container">
-            <div className="Product-Swiper">
-            <FontAwesomeIcon className="prev-btn" icon={faArrowLeft}/>
-            <FontAwesomeIcon className="next-btn" icon={faArrowRight}/>
-            <Swiper 
-                modules={[Navigation, Pagination, A11y, Autoplay, EffectFade]}
-                loop={true}
-                autoplay={{ delay: 2500, disableOnInteraction: false}}
-                speed={1250}
-                slidesPerView={4}
-                spaceBetween={20}
-                navigation={{ clickable: true , nextEl: '.next-btn', prevEl: '.prev-btn'}}
-                pagination={{ clickable: true }}>
-                <SwiperSlide>
-                    <ProductIcon productName={'Third Product'} 
-                    lastPrice={'10,000'}
-                    newPrice={'4,500'}
-                    imgSrc={'/Assets/Images/media-01.png'}
-                    />
-                </SwiperSlide> 
-                <SwiperSlide>
-                    <ProductIcon productName={'Third Product'} 
-                    lastPrice={'10,000'}
-                    newPrice={'4,500'}
-                    imgSrc={'/Assets/Images/media-01.png'}
-                    />
-                </SwiperSlide> 
-                <SwiperSlide>
-                    <ProductIcon productName={'Third Product'} 
-                    lastPrice={'10,000'}
-                    newPrice={'4,500'}
-                    imgSrc={'/Assets/Images/media-01.png'}
-                    />
-                </SwiperSlide> 
-                <SwiperSlide>
-                    <ProductIcon productName={'Third Product'} 
-                    lastPrice={'10,000'}
-                    newPrice={'4,500'}
-                    imgSrc={'/Assets/Images/media-01.png'}
-                    />
-                </SwiperSlide> 
-                <SwiperSlide>
-                    <ProductIcon productName={'Third Product'} 
-                    lastPrice={'10,000'}
-                    newPrice={'4,500'}
-                    imgSrc={'/Assets/Images/media-01.png'}
-                    />
-                </SwiperSlide> 
-                <SwiperSlide>
-                    <ProductIcon productName={'Third Product'} 
-                    lastPrice={'10,000'}
-                    newPrice={'4,500'}
-                    imgSrc={'/Assets/Images/media-01.png'}
-                    />
-                </SwiperSlide>
-            </Swiper>
+            <div className="container">
+                    <div className="Product-Swiper">
+                    <FontAwesomeIcon className="prev-btn" icon={faArrowLeft}/>
+                    <FontAwesomeIcon className="next-btn" icon={faArrowRight}/>
+                    <Swiper 
+                            modules={[Navigation, Pagination, A11y, Autoplay, EffectFade]}
+                            loop={true}
+                            autoplay={{ delay: 2500, disableOnInteraction: false}}
+                            speed={1250}
+                            slidesPerView={4}
+                            spaceBetween={20}
+                            navigation={{ clickable: true , nextEl: '.next-btn', prevEl: '.prev-btn'}}
+                            pagination={{ clickable: true }}>
+                            {data_products.slice(0, 6).map((product, index) => {
+                            return (<SwiperSlide >
+                                    <ProductIcon 
+                                    key={index}
+                                    id={data_products.id}
+                                    productName={product.productName} 
+                                    lastPrice={product.lastPrice}
+                                    newPrice={product.newPrice}
+                                    imgSrc={product.imgSrc}
+                                    />
+                            </SwiperSlide> )
+                            })}
+                    </Swiper>
+                    </div>
             </div>
-        </div>
     </div>
-  )
+)
 }
 
 export default productSlider
