@@ -9,21 +9,42 @@ const ReviewSlider = () => {
 return (
     <div className='Product-Slider'>
             <div className="container">
-                    <div className="Product-Swiper">
+                    <div className="Product-Swiper review-Swiper">
                     <FontAwesomeIcon className="prev-btn1" icon={faArrowLeft}/>
                     <FontAwesomeIcon className="next-btn1" icon={faArrowRight}/>
                     <Swiper 
                             modules={[Navigation, Pagination, A11y, Autoplay, EffectFade]}
-                            loop={false}
+                            loop={true}
                             speed={1000}
                             grabCursor={true}
                             initialSlide={2}
-                            slidesPerView={3}
                             spaceBetween={20}
                             height={100}
                             centeredSlides={true}
                             navigation={{ clickable: true , nextEl: '.next-btn1', prevEl: '.prev-btn1'}}
-                            pagination={{ clickable: true }}>
+                            pagination={{ clickable: true }}
+                            breakpoints={{
+                                0: {
+                                  slidesPerView: 1,
+                                  spaceBetween: 20,
+                                },
+                                768: {
+                                  slidesPerView: 2,
+                                  centeredSlides: false,
+                                  spaceBetween: 40,
+                                },
+                                1024: {
+                                  slidesPerView: 2.6,
+                                  spaceBetween: 20,
+                                  centeredSlides: true,
+
+                                },
+                                1600: {
+                                  slidesPerView: 3,
+                                  spaceBetween: 20,
+                                },
+                              }}
+                            >
                             <SwiperSlide >
                                     <Reviews review={"This product is good, and it satisfy the need of clothes"} 
                                     userName={"Bilal"}/>

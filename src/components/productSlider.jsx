@@ -18,7 +18,22 @@ return (
                             loop={true}
                             autoplay={{ delay: 2500, disableOnInteraction: false}}
                             speed={1250}
-                            slidesPerView={4}
+                            breakpoints={{
+                                0: {
+                                  slidesPerView: 1,
+                                  spaceBetween: 20,
+                                },
+                                768: {
+                                  slidesPerView: 2,
+                                  centeredSlides: false,
+                                  spaceBetween: 40,
+                                },
+                                1024: {
+                                  slidesPerView: 4,
+                                  spaceBetween: 20,
+
+                                },
+                              }}
                             spaceBetween={20}
                             navigation={{ clickable: true , nextEl: '.next-btn', prevEl: '.prev-btn'}}
                             pagination={{ clickable: true }}>

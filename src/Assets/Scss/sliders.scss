@@ -65,11 +65,9 @@
         }
     }
 }
-
 .Product-Slider {
     .Product-Swiper {
         position: relative;
-        padding-top: 20px;
         padding-inline: 60px;
         .swiper{
             padding-bottom: 60px;
@@ -124,5 +122,31 @@
                 }
             }
         }
+    }
+    .review-Swiper{
+        .swiper{
+            .swiper-slide{
+                &-active{
+                    .ClientReviews{
+                        opacity: 1;
+                        transition: all 0.5s ease;
+                        .reviewCard{
+                            border: 1px solid rgba(0, 0, 0, 0.2);
+                            background-color: white;
+                            box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .HeroComponent .heroSlider .swiper-slide .detailButton{
+        padding-inline: 30px;
+    }
+    .Product-Slider .Product-Swiper{
+        padding-inline: 40px;
+        
     }
 }
