@@ -5,12 +5,12 @@ const footer = () => {
     <div className='footer-section'>
         <div className="container">
             <div className="row">
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6">
                     <div className="footer-logo">
                         <img src="/Images/main-logo.png" alt="" />
                     </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6">
                     <ul>
                         <h4>
                             Useful Links
@@ -35,7 +35,7 @@ const footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6">
                     <h3 className="footerContact">
                         Contact Us
                     </h3>

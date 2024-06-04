@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
 const Products = ({ productName, lastPrice, newPrice, imgSrc }) => {
   const [rating, setRating] = useState(null);
   const [hover, setHover] = useState(null);

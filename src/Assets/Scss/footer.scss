@@ -46,6 +46,8 @@
         font-weight: 400; 
     }  
     .footer-input{
+        display: flex;
+        align-items: center;
         input{
             border: none;
             outline: none;
@@ -69,6 +71,7 @@
                 background-color: white;
                 color: #c69938;
                 transition: all 0.4s ease;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             }
         }
     }
